@@ -132,12 +132,14 @@ end
 
 cmd "sudo echo sudo"
 
-clean()
+# clean()
 
-get_zynaddsubfx()
-get_zest()
+# get_zynaddsubfx()
+# get_zest()
 
-build_demo_package()
+
+
+# build_demo_package()
 build_release_package()
 
 display_reminders()

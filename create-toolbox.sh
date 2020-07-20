@@ -1,4 +1,8 @@
-
+#!/usr/bin/env
+set -u
+#
+# Build a toolbox container to build Zyn-Fusion
+#
 
 export cont=ZynBuild
 
@@ -14,3 +18,6 @@ toolbox run   -c $cont sudo dnf -y install @"C Development Tools and Libraries" 
 toolbox run   -c $cont sudo dnf -y install rake python2  
 
 # Need to patch the build file ...
+
+echo -e "\nNow \"toolbox enter -c $cont\"  and run \"ruby build-linux.rb\"\n"
+
